@@ -4,7 +4,7 @@ function Details() {
   let Display_Details = () => {
     let uname = document.getElementById("uname").value;
     let udob = document.getElementById("udob").value;
-    let uco = document.getElementById("ucno").value;
+    let ucno = document.getElementById("ucno").value;
     let uage = document.getElementById("uage").value;
     let uemail = document.getElementById("uemail").value;
     let uaddr = document.getElementById("uaddr").value;
