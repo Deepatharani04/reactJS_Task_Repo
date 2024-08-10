@@ -1,14 +1,14 @@
 import React from "react";
 
 function Details() {
-  let Display = () => {
-    let name = document.getElementById("name").value;
-    let dob = document.getElementById("dob").value;
-    let cnum = document.getElementById("cnum").value;
-    let age = document.getElementById("age").value;
-    let email = document.getElementById("email").value;
-    let addr = document.getElementById("addr").value;
-    alert("Hii " + name + " You've Submitted the Form!!");
+  let Display_Details = () => {
+    let uname = document.getElementById("uname").value;
+    let udob = document.getElementById("udob").value;
+    let uco = document.getElementById("ucno").value;
+    let uage = document.getElementById("uage").value;
+    let uemail = document.getElementById("uemail").value;
+    let uaddr = document.getElementById("uaddr").value;
+    alert("Hii " + uname + " You've Submitted the Form!!!");
   };
 
   return (
@@ -16,41 +16,24 @@ function Details() {
       <h1>Personal Details </h1>
       <br></br>
       <label>Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter Your Name" />
-      <br />
+      <input type="text" id="uname" name="uname" placeholder="Enter Your Name" />
       <br />
       <label>Age:</label>
-      <input type="number" id="age" name="age" placeholder="Enter Your Age" />
+      <input type="number" id="uage" name="uage" placeholder="Enter Your Age" />
       <br />
-      <br />
-      <label>DOB:</label>
-      <input type="date" id="dob" name="dob" />
-      <br />
+      <label>Date Of Birth:</label>
+      <input type="date" id="udob" name="udob" />
       <br />
       <label>Contact Number:</label>
-      <input type="tel" id="cnum" name="cnum" placeholder="Enter Your Contact Number" />
+      <input type="tel" id="ucno" name="ucno" placeholder="Enter Your Contact Number" />
       <br />
+      <label>Email Address:</label>
+      <input type="email" id="uemail" name="uemail" placeholder="Enter Your Email Address" />
       <br />
-      <label>Email:</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Enter Your Email Address"
-      />
+      <label>Physical Address:</label>
+      <textarea id="uaddr" name="uaddr" rows="4" cols="35" placeholder="Enter Your Address" ></textarea>{" "}
       <br />
-      <br />
-      <label>Address:</label>
-      <textarea
-        id="addr"
-        name="addr"
-        rows="4"
-        cols="35"
-        placeholder="Enter Your Address"
-      ></textarea>{" "}
-      <br />
-      <br />
-      <button onClick={Display}>Submit</button>
+      <button onClick={Display_Details}>Submit</button>
     </>
   );
 }
